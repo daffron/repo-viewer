@@ -58,7 +58,6 @@ class Results extends Component {
     if (Boolean(!this.props.repos)) {
       return (
         <div>
-          
           <h4>Search for a user to begin!</h4>
         </div>
       )
@@ -91,7 +90,7 @@ class Results extends Component {
               })}
             </tbody>
           </table>
-          <h2>{this.props.repos.length - this.state.repos.length} Repos are hidden</h2>
+          <h2>Not Showing {this.props.repos.length - this.state.repos.length} repos</h2>
         </div>
       )
     }
